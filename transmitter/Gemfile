@@ -2,3 +2,5 @@ require 'rbconfig'
 source 'http://rubygems.org'
 
 gem 'chronic'
+gem 'rspec'
+gem 'cucumber'
