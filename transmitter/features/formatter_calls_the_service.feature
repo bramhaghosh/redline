@@ -13,5 +13,5 @@ Feature: Formatter calls the service
     """
 
   Scenario: The formatter gets loaded
-    Given I run `cucumber features/dummy.feature --format Redline::Transmitter`
+    Given I run cucumber `features/f.feature --format Redline::Transmitter`
     Then it should not fail

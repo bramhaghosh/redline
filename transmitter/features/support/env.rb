@@ -1,7 +1,5 @@
-$: << File.dirname(__FILE__) + "/../.."
-require 'require_all'
+$: << File.dirname(__FILE__) + "/../../lib"
 
-require_all 'lib'
 require 'aruba/api'
 require 'aruba/cucumber'
 
