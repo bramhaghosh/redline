@@ -23,6 +23,7 @@ GEM
     gherkin (2.9.3-x86-mingw32)
       json (>= 1.4.6)
     json (1.6.6)
+    require_all (1.2.1)
     rspec (2.9.0)
       rspec-core (~> 2.9.0)
       rspec-expectations (~> 2.9.0)
@@ -41,4 +42,5 @@ DEPENDENCIES
   aruba
   chronic
   cucumber
+  require_all
   rspec

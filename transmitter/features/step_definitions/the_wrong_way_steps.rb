@@ -10,3 +10,7 @@ Then /^it calls the service$/ do
   pending # express the regexp above with the code you wish you had
 end
 
+Then /^it should not fail$/ do
+
+end
+
