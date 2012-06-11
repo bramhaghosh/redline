@@ -1,6 +1,7 @@
 $: << File.dirname(__FILE__) + "/../../lib"
 
-# ENV['PATH'] = "#{File.expand_path(File.dirname(__FILE__) + '/../../bin')}#{File::PATH_SEPARATOR}#{ENV['PATH']}"
+PROJECT_ROOT = File.join(File.dirname(__FILE__),'..','..')
+ENV['PATH'] = "#{File.join(PROJECT_ROOT,'bin')}#{File::PATH_SEPARATOR}#{ENV['PATH']}"
 
 puts "Path is #{ENV['PATH']}"
 

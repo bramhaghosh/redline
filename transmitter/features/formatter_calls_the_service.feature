@@ -13,5 +13,5 @@ Feature: Formatter calls the service
     """
 
   Scenario: The formatter gets loaded
-    Given I run `bundle`
+    Given I just run cucumber
     Then it should not fail
