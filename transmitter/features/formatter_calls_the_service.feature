@@ -12,6 +12,7 @@ Feature: Formatter calls the service
       end
     """
 
+    @announce
   Scenario: The formatter gets loaded
     Given I just run cucumber
     Then it should not fail
