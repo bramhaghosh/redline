@@ -14,7 +14,7 @@ Feature: Formatter calls the service
     """
     And a file named "features/support/step_list_formatter.rb" with:
     """
-    require '../../features/support/transmitter'
+    require '../../lib/transmitter'
     """
 
     @announce

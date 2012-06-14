@@ -15,5 +15,3 @@ Then /^it should not fail$/ do
 
 end
 
-Given /^I just run cucumber$/ do
-end
