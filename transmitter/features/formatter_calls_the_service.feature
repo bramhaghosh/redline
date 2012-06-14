@@ -1,3 +1,4 @@
+
 Feature: Formatter calls the service
   Background:
     Given a file named "features/dummy.feature" with:
@@ -11,8 +12,12 @@ Feature: Formatter calls the service
       Given /^this step works$/ do
       end
     """
+    And a file named "features/support/step_list_formatter.rb" with:
+    """
+    require '../../features/support/transmitter'
+    """
 
     @announce
   Scenario: The formatter gets loaded
-    Given I just run cucumber
+    Given I successfully run `cucumber -f Redline::Transmitter`
     Then it should not fail
