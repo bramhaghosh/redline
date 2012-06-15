@@ -21,10 +21,14 @@ Given /^a valid feature with step definitions$/ do
   write_file("features/#{feature_file}", feature)
 end
 
-When /^I sucessfully run `cucumber \-f Redline::Transmitter'$/ do
-  pending # express the regexp above with the code you wish you had
-end
 
 Then /^I should not get any error messages$/ do
   pending # express the regexp above with the code you wish you had
+end
+
+Then /I require the Redline::Transmitter formatter$/ do
+  append_to_file('features/support/env.rb', "require '../../lib/transmitter'")
+  #if the env.rb doesn't exists create it
+  #if it does and it doesn't have the require statement for the transmitter
+  #append the transmitter require to the env.rb
 end

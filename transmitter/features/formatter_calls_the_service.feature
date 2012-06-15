@@ -11,7 +11,7 @@ Feature: Formatter calls the service
       Given /^this step works$/ do
       end
     """
-    And a file named "features/support/step_list_formatter.rb" with:
+    And a file named "support/env.rb" with:
     """
     require '../../lib/transmitter'
     """
