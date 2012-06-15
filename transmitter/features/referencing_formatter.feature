@@ -3,13 +3,13 @@ Feature: Referencing the formatter
     Given a valid feature with step definitions
 
   Scenario: Requiring the formatter
-    And I require the Redline::Transmitter formatter
-    Then I successfully run `cucumber -f Redline::Transmitter`
+    And I require the Redline formatter
+    Then I successfully run `cucumber -f Cucumber::Formatter::Redline`
 
   Scenario: Failing to require the formatter
-    When I run `cucumber -f Redline::Transmitter`
+    When I run `cucumber -f Cucumber::Formatter::Redline`
     Then the output should contain: 
     """
-    no such file to load -- redline/transmitter
+    no such file to load -- cucumber/formatter/redline
     """
    

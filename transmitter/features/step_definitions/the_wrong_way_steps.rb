@@ -9,6 +9,6 @@ Given /^a valid feature with step definitions$/ do
   write_file("features/#{feature_file}", feature)
 end
 
-Then /I require the Redline::Transmitter formatter$/ do
-  append_to_file('features/support/env.rb', "require '../../lib/transmitter'")
+Then /I require the Redline formatter$/ do
+  append_to_file('features/support/env.rb', "require '../../lib/redline'")
 end
