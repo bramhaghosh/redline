@@ -1,4 +1,4 @@
-Feature: Use the transmitter formatter
+Feature: Referencing the formatter
   Background:
     Given a valid feature with step definitions
 
