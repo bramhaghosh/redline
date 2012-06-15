@@ -1,7 +1,8 @@
-# @wip
-# Feature: Use the transmitter formatter to send up the data
-# 
-#   Scenario: Using the formatter
-#     When I use cucumber with the formatter
-#     Then I should call the service endpoint
+@wip
+Feature: Use the transmitter formatter
+
+  Scenario: Using the formatter
+    Given a valid feature with step definitions
+    When I sucessfully run `cucumber -f Redline::Transmitter'
+    Then I should not get any error messages
    

@@ -1,4 +1,3 @@
-
 Feature: Formatter calls the service
   Background:
     Given a file named "features/dummy.feature" with:
@@ -19,5 +18,4 @@ Feature: Formatter calls the service
 
     @announce
   Scenario: The formatter gets loaded
-    Given I successfully run `cucumber -f Redline::Transmitter`
-    Then it should not fail
+    Then I successfully run `cucumber -f Redline::Transmitter`
