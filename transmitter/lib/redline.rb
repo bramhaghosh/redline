@@ -1,8 +1,14 @@
+require 'cucumber/formatter/json'
+require 'cucumber/formatter/io'
+require 'gherkin/formatter/argument'
+
 module Cucumber
   module Formatter
-    class Redline
+    class Redline < Cucumber::Formatter::Json
+      include Io
       def initialize(step_mother, io, options)
-        # raise 'this is totally on purpose'
+        @io = ensure_io(io, "json")
+        super(step_mother, @io, options)
       end
     end
   end

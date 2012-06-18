@@ -12,4 +12,3 @@ Feature: Referencing the formatter
     """
     no such file to load -- cucumber/formatter/redline
     """
-   

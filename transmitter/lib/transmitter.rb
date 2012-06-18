@@ -1,0 +1,3 @@
+class Transmitter
+
+end
