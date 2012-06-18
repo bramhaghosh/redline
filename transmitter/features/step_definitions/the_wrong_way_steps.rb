@@ -12,3 +12,7 @@ end
 Then /I require the Redline formatter$/ do
   append_to_file('features/support/env.rb', "require '../../lib/redline'")
 end
+
+Then /^the service should be called with$/ do |string|
+  all_output.should include string.strip!
+end

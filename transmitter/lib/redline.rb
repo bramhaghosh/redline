@@ -1,6 +1,5 @@
-require 'cucumber/formatter/json'
 require 'cucumber/formatter/io'
-require 'gherkin/formatter/argument'
+require 'cucumber/formatter/json'
 
 module Cucumber
   module Formatter
