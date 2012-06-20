@@ -16,3 +16,18 @@ end
 Then /^the service should be called with$/ do |string|
   all_output.should include string.strip!
 end
+
+Then /^the service should be called with valid json$/ do
+  JSON.parse(all_output)
+end
+
+Then /^the json should contain only passing results$/ do
+  results = JSON.parse(all_output, :symbolize_names => true)
+  results.each do |feature|
+    feature[:elements].each do |scenario|
+      scenario[:steps].each do |step|
+        step[:result][:status].should == 'passed'
+      end
+    end
+  end
+end
