@@ -23,6 +23,7 @@ end
 
 Then /^the json should contain only passing results$/ do
   results = JSON.parse(all_output, :symbolize_names => true)
+  binding.pry
   results.each do |feature|
     feature[:elements].each do |scenario|
       scenario[:steps].each do |step|
