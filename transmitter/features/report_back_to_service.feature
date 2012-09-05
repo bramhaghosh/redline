@@ -1,6 +1,6 @@
 Feature: Calling the service
 
-  @foo
+  @bar
   Scenario: Calls the service with a passing test result
     Given a valid feature with step definitions
     And I require the Redline formatter

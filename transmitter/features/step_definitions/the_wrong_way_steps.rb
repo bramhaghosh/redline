@@ -23,12 +23,6 @@ end
 
 Then /^the json should contain only passing results$/ do
   results = JSON.parse(all_output, :symbolize_names => true)
-  binding.pry
-  results.each do |feature|
-    feature[:elements].each do |scenario|
-      scenario[:steps].each do |step|
-        step[:result][:status].should == 'passed'
-      end
-    end
-  end
+  results[:testsuite][:tests].to_i.should == 1
+  results[:testsuite][:failures].to_i.should == 0
 end
