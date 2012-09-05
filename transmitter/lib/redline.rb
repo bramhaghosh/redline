@@ -7,7 +7,6 @@ require 'active_support/core_ext'
 module Cucumber
   module Formatter
     class Redline 
-      # include Io
 
       def initialize(step_mother, io, options)
         @options = options
@@ -49,8 +48,6 @@ module Cucumber
           end
 
           json_result = construct_json_result(@testsuite.target!)
-
-          puts json_result
 
           Interceptor::Pipe.unwrap! :stdout
           Interceptor::Pipe.unwrap! :stderr
