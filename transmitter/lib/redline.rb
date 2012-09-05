@@ -1,6 +1,4 @@
-require 'cucumber/formatter/junit'
 require 'cucumber/formatter/ordered_xml_markup'
-require 'cucumber/formatter/io'
 require 'cucumber/formatter/interceptor'
 require 'active_support/core_ext'
 
@@ -9,7 +7,7 @@ require 'active_support/core_ext'
 module Cucumber
   module Formatter
     class Redline 
-      include Io
+      # include Io
 
       def initialize(step_mother, io, options)
         @options = options
